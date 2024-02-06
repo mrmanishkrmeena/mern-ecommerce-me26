@@ -198,7 +198,7 @@ export const getDashboardStats = TryCatch(async (req, res, next) => {
 
 export const getPieCharts = TryCatch(async (re, res, next) => {
   let charts;
-  const key = "admin-oie-charts";
+  const key = "admin-pie-charts";
   if (myCache.has(key)) charts = JSON.parse(myCache.get(key) as string);
   else {
     const allOrderPromise = Order.find({}).select([
