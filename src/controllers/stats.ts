@@ -177,6 +177,7 @@ export const getDashboardStats = TryCatch(async (req, res, next) => {
 
     stats = {
       categoryCount,
+      changePercent,
       count,
       chart: {
         order: orderMonthCounts,
