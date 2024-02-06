@@ -244,7 +244,7 @@ export const getPieCharts = TryCatch(async (re, res, next) => {
       productsCount,
     });
 
-    const stockAvailability = {
+    const stockAvailablity = {
       inStock: productsCount - outOfStock,
       outOfStock,
     };
@@ -291,7 +291,7 @@ export const getPieCharts = TryCatch(async (re, res, next) => {
     charts = {
       orderFullfillment,
       productCategories,
-      stockAvailability,
+      stockAvailablity,
       revenueDistribution,
       adminCustomer,
       usersAgeGroup,
