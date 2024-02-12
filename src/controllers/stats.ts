@@ -164,7 +164,7 @@ export const getDashboardStats = TryCatch(async (req, res, next) => {
 
     const userRatio = {
       male: usersCount - femaleUsersCount,
-      felame: femaleUsersCount,
+      female: femaleUsersCount,
     };
 
     const modifyedLatestTransaction = latestTransaction.map((i) => ({
