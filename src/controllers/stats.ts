@@ -234,7 +234,7 @@ export const getPieCharts = TryCatch(async (re, res, next) => {
     ]);
 
     const orderFullfillment = {
-      peocessing: processingOrder,
+      processing: processingOrder,
       shipped: shippedOrder,
       delivered: deliveredOrder,
     };
